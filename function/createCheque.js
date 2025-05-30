@@ -4,9 +4,9 @@ import axios from "axios";
 
 
 dotenv.config();
-const service = process.env.SERVICE
-const user = process.env.USER
-const password = process.env.PASSWORD
+const service = process.env.MAIL_SERVICE
+const user = process.env.MAIL_USER
+const password = process.env.MAIL_PASSWORD
 
 
 let transporter = nodemailer.createTransport({
