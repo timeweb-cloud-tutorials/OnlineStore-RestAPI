@@ -11,8 +11,8 @@ const password = process.env.PASSWORD
 
 let transporter = nodemailer.createTransport({
     host: service,
-    port: 587,
-    secure: false,
+    port: 465,
+    secure: true,
     auth: {
         user: user,
         pass: password
